@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "module": "commonjs",
+        "lib": ["es6", "dom"],
+        "outDir": "dist",
+        "strict": true,
+        "esModuleInterop": true,
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "sourceMap": true,
+        "rootDir": "src"
+    },
+    "include": [
+        "src/**/**.ts",
+        "src/config/database.ts",
+        "src/migrations/dbinit.sql"
+    ],
+    "exclude": ["node_modules", "dist"]
+}
