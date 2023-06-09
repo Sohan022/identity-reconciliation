@@ -12,13 +12,24 @@
 git clone https://github.com/Sohan022/identity-reconciliation.git
 cd identity-reconciliation
 ```
+Add .env file
+```
+DB_USER=root
+DB_PASSWORD=password
+DB_HOST=db
+DB_PORT=5432
+DB_NAME=identify
+PORT=3000
+```
 
 ### With Docker
+Here I'm assuming, you have already installed Docker
 ```
 docker-compose up --build
 ```
 
 ### Without Docker
+Here I'm assuming, you have already setup your PostgreSQL
 ```
 npm install
 npm run build
