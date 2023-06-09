@@ -29,7 +29,8 @@ docker-compose up --build
 ```
 
 ### Without Docker
-Here I'm assuming, you have already setup your PostgreSQL
+Here I'm assuming, you have already setup your PostgreSQL.
+And you have to run [this query](https://github.com/Sohan022/identity-reconciliation/blob/main/src/migrations/dbinit.sql) to create table.
 ```
 npm install
 npm run build
