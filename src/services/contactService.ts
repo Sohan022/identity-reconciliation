@@ -32,7 +32,7 @@ class ContactService {
         }
 
         query += ' ORDER BY created_at ASC';
-        console.log(emails, phoneNumbers, query, params);
+        
         const { rows } = await db.query(query, params);
         return rows.map((row:any) => mapRowToContact(row));
     };
